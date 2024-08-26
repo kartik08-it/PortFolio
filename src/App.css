@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+html, body {
+  height: 100%;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
   display: flex;
   flex-direction: column;
+}
+
+#root {
+  flex: 1;
+  background: radial-gradient(farthest-corner at 40% 50%, #2F4F7F, #1A1D23);
+  background-size: 200% 200%;
+  /* animation: gradient 10s ease-in-out infinite; */
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+    transform: scale(1);
+  }
+  50% {
+    background-position: 100% 50%;
+    transform: scale(1.1);
+  }
+  100% {
+    background-position: 0% 50%;
+    transform: scale(1);
+  }
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+}
+
+.content {
+  flex: 1; /* This makes the content area expand and push the footer down */
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px;
+  /* background-color: #1abae2; */
+  /* color: white; */
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  padding: 10px;
+}
+.footer-left, .footer-right {
+  display: flex;
+  gap: 10px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer-center {
+  flex: 1;
+  text-align: center;
 }

@@ -1,0 +1,81 @@
+.contact-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 85.7vh;
+    background: radial-gradient(farthest-corner at 40% 50%, #2F4F7F, #1A1D23);
+    color: #FFFFFF;
+  }
+  
+  .contact-me h2 {
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 24px;
+    color: #000000;
+  }
+  
+  .contact-me p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+  }
+  
+  .contact-me a {
+    text-decoration: none;
+    color: #337ab7;
+    transition: color 0.2s ease;
+  }
+  
+  .contact-me a:hover {
+    color: #23527c;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .social-links li {
+    margin: 0 10px;
+  }
+  
+  .social-links a {
+    font-size: 24px;
+    color: #666;
+    transition: color 0.2s ease;
+  }
+  
+  .social-links a:hover {
+    color: #337ab7;
+  }
+  
+  .social-links i {
+    font-size: 24px;
+  }
+  
+  .fa-envelope {
+    color: #337ab7;
+  }
+  
+  .fa-linkedin {
+    color: #0072b1;
+  }
+  
+  .fa-twitter {
+    color: #1da1f2;
+  }
+  
+  .fa-github {
+    color: #333;
+  }
+  
+  .fa-instagram {
+    color: #e1306c;
+  }
+  
+  .fa-facebook {
+    color: #3b5998;
+  } 
